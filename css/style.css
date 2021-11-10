@@ -82,6 +82,7 @@ img {
 .sisters-list-item {
   width: 100%;
   max-width: 50%;
+  margin-bottom: 16px;
 }
 
 .sisters-img {
