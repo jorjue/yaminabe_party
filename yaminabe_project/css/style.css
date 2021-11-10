@@ -1,0 +1,213 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  font-family: source-han-sans-japanese, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 3.6rem;
+  font-family: 'Yusei magic', sons-serif;
+  text-align: center;
+  color: #274c7d;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-logo {
+  max-height: 80px;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header-logo:hover {
+  opacity: .8;
+}
+
+.main {
+  padding-top: 80px;
+  padding-bottom: 78px;
+}
+
+.top-slider {
+  width: 100%;
+  height: 100%;
+  max-height: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sisters-section {
+  padding: 16px 8px;
+}
+
+.sisters-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sisters-list-item {
+  width: 100%;
+  max-width: 50%;
+  display: inline-block;
+  margin: auto;
+  padding: 8px;
+}
+
+.sisters-img {
+  width: 163px;
+  height: 163px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.sisters-img .haritha {
+  border-color: #9F9F9F;
+}
+
+.sisters-img .suzuna {
+  border-color: #A111BF;
+}
+
+.sisters-img .meruru {
+  border-color: #E79FD4;
+}
+
+.sisters-img .suisei {
+  border-color: #3BC313;
+}
+
+.sisters-img:hover {
+  opacity: .8;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.sisters-name {
+  text-align: center;
+}
+
+.news-section {
+  padding: 16px;
+  background-color: #f0f0f0;
+}
+
+.news-list-item {
+  padding: 8px 42px;
+  opacity: .8;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.news-list-item:hover {
+  opacity: .6;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.post-date, .post-title {
+  text-decoration: underline;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+.readmore-btn {
+  display: block;
+  margin: 0 auto;
+  background-color: #e6e6f5;
+  padding: 8px 27px;
+  border-radius: 27px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.readmore-btn:hover {
+  text-decoration: underline;
+  opacity: .7;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.works-section {
+  padding: 16px;
+}
+
+.works-section img {
+  margin: 4px 0;
+  cursor: pointer;
+}
+
+.works-section img:hover {
+  opacity: .8;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.footer {
+  height: 40px;
+  text-align: center;
+  background-color: #e0e0e0;
+  line-height: 40px;
+}
+
+.bottom-navigation {
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: #fff;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-item {
+  width: 100%;
+  max-width: 20%;
+  height: 78px;
+  border: 1px solid white;
+  background-color: #e6e6f5;
+}
+
+.nav-title {
+  line-height: 78px;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
