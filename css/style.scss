@@ -69,12 +69,12 @@ img {
 .sisters-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 
     &-item {
         width: 100%;
         max-width: 50%;
         display: inline-block;
-        margin: auto;
         padding: 8px;
     }
 }
