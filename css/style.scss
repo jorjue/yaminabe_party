@@ -89,26 +89,26 @@ img {
     border: 1px solid #fff;
     cursor: pointer;
 
-    &.haritha {
-        border-color: #9F9F9F;
-    }
-
-    &.suzuna {
-        border-color: #A111BF;
-    }
-
-    &.meruru {
-        border-color: #E79FD4;
-    }
-
-    &.suisei {
-        border-color: #3BC313;
-    }
-
     &:hover {
         opacity: .8;
         transition: .3s;
     }
+}
+
+#haritha {
+    border-color: #9F9F9F;
+}
+
+#suzuna {
+    border-color: #A111BF;
+}
+
+#meruru {
+    border-color: #E79FD4;
+}
+
+#suisei {
+    border-color: #3BC313;
 }
 
 .sisters-name {

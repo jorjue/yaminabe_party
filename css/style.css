@@ -96,26 +96,26 @@ img {
   cursor: pointer;
 }
 
-.sisters-img.haritha {
-  border-color: #9F9F9F;
-}
-
-.sisters-img.suzuna {
-  border-color: #A111BF;
-}
-
-.sisters-img.meruru {
-  border-color: #E79FD4;
-}
-
-.sisters-img.suisei {
-  border-color: #3BC313;
-}
-
 .sisters-img:hover {
   opacity: .8;
   -webkit-transition: .3s;
   transition: .3s;
+}
+
+#haritha {
+  border-color: #9F9F9F;
+}
+
+#suzuna {
+  border-color: #A111BF;
+}
+
+#meruru {
+  border-color: #E79FD4;
+}
+
+#suisei {
+  border-color: #3BC313;
 }
 
 .sisters-name {
