@@ -16,27 +16,7 @@
                 scriptTimeout: 3000,
                 async: true
             },
-                h = d.documentElement,
-                t = setTimeout(function () {
-                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-                }, config.scriptTimeout),
-                tk = d.createElement("script"),
-                f = false,
-                s = d.getElementsByTagName("script")[0],
-                a;
-            h.className += " wf-loading";
-            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
-            tk.async = true;
-            tk.onload = tk.onreadystatechange = function () {
-                a = this.readyState;
-                if (f || a && a != "complete" && a != "loaded") return;
-                f = true;
-                clearTimeout(t);
-                try {
-                    Typekit.load(config)
-                } catch (e) { }
-            };
-            s.parentNode.insertBefore(tk, s)
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
 
@@ -48,105 +28,158 @@
     <header class="header">
 
         <h1 class="header-logo">
-            <img src="images/闇鍋仮ロゴ.png" alt="闇鍋姉妹の闇鍋パーティー" class="header-logo">
+            <a href="/">
+                <img src="images/yaminabe_logo.png" alt="闇鍋姉妹の闇鍋パーティー" class="header-logo">
+            </a>
         </h1>
+
     </header>
 
-    <main class="main">
+    <div class="contents-area">
 
-        <h2 class="slider">
+        <nav class="side-nav">
 
-            <img src="images/slick用仮画像.JPG" alt="" class="top-slider">
-        </h2>
+            <h3 class="section-title">
+                MAIN MENU
+            </h3>
 
-        <h3 class="section-title">
-            SISTERS
-        </h3>
+            <ul class="side-nav-list">
+                <li class="side-nav-item">SISTERS</li>
+                <li class="side-nav-item">ABOUT</li>
+                <li class="side-nav-item">MUSIC</li>
+                <li class="side-nav-item">GALLERY</li>
+                <li class="side-nav-item">EXTRA</li>
+                <li class="side-nav-item">CONTACT</li>
+            </ul>
+        </nav>
 
-        <section class="sisters-section">
+        <main class="main">
 
-            <div class="container">
+            <section class="slider">
 
-                <ul class="sisters-list">
+                <h2 class="section-title">
+                    Pickup contents!!
+                </h2>
 
-                    <li class="sisters-list-item" id="haritha">
-                        <img src="images/haritha_face2.jpg" alt="ぷりずむ銉てゃ！" class="sisters-img">
-                        <p class="sisters-name">ぷりずむ銉てゃ！</p>
-                    </li>
-                    <li class="sisters-list-item" id="suzuna">
-                        <img src="images/suzuna_face2.JPG" alt="すずな" class="sisters-img">
-                        <p class="sisters-name">すずな</p>
-                    </li>
-                    <li class="sisters-list-item" id="meruru">
-                        <img src="images/meruru_face2.jpg" alt="めるる" class="sisters-img">
-                        <p class="sisters-name">めるる</p>
-                    </li>
-                    <li class="sisters-list-item" id="suisei">
-                        <img src="images/suisei_face2.jpg" alt="翠星" class="sisters-img">
-                        <p class="sisters-name">翠星</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
+                <img src="images/slickbanner1.JPG" alt="" class="top-slider">
+            </section>
 
-        <h3 class="section-title">
-            NEWS
-        </h3>
+            <section class="sisters-section">
 
-        <section class="news-section">
+                <h3 class="section-title">
+                    SISTERS
+                </h3>
 
-            <div class="container">
+                <div class="container">
 
-                <ul class="news-list">
-                    <li class="news-list-item">
-                        <p class="post-date">
-                            2021/11/2
-                        </p>
-                        <p class="post-title">
-                            ここにタイトルが入ります。
-                        </p>
-                    </li>
-                    <li class="news-list-item">
-                        <p class="post-date">
-                            2021/11/2
-                        </p>
-                        <p class="post-title">
-                            ここにタイトルが入ります。
-                        </p>
-                    </li>
-                    <li class="news-list-item">
-                        <p class="post-date">
-                            2021/11/2
-                        </p>
-                        <p class="post-title">
-                            ここにタイトルが入ります。
-                        </p>
-                    </li>
-                </ul>
+                    <ul class="sisters-list">
 
-                <button class="readmore-btn">
-                    more &gt;
-                </button>
-            </div>
-        </section>
+                        <li class="sisters-list-item" id="haritha">
+                            <img src="images/haritha_face2.jpg" alt="ぷりずむ銉てゃ！" class="sisters-img">
+                            <p class="sisters-name">ぷりずむ銉てゃ！</p>
+                        </li>
+                        <li class="sisters-list-item" id="suzuna">
+                            <img src="images/suzuna_face2.JPG" alt="すずな" class="sisters-img">
+                            <p class="sisters-name">すずな</p>
+                        </li>
+                        <li class="sisters-list-item" id="meruru">
+                            <img src="images/meruru_face2.jpg" alt="めるる" class="sisters-img">
+                            <p class="sisters-name">めるる</p>
+                        </li>
+                        <li class="sisters-list-item" id="suisei">
+                            <img src="images/suisei_face2.jpg" alt="翠星" class="sisters-img">
+                            <p class="sisters-name">翠星</p>
+                        </li>
+                    </ul>
 
-        <h3 class="section-title">
-            WORKS
-        </h3>
-        <section class="works-section">
+                    <ul class="sisters-list-pc">
 
-            <div class="container">
+                        <li class="sisters-list-pc-item" id="haritha-pc">
+                            <img src="images/haritha_face.jpg" alt="ぷりずむ銉てゃ！" class="sisters-image-pc">
+                            <p class="sisters-name-pc">ぷりずむ銉てゃ！</p>
+                        </li>
+                        <li class="sisters-list-pc-item" id="suzuna-pc">
+                            <img src="images/suzuna_face.jpg" alt="すずな" class="sisters-image-pc">
+                            <p class="sisters-name-pc">すずな</p>
+                        </li>
+                        <li class="sisters-list-pc-item" id="meruru-pc">
+                            <img src="images/meruru_face.jpg" alt="めるる" class="sisters-image-pc">
+                            <p class="sisters-name-pc">めるる</p>
+                        </li>
+                        <li class="sisters-list-pc-item" id="suisei-pc">
+                            <img src="images/suisei_face.jpg" alt="翠星" class="sisters-image-pc">
+                            <p class="sisters-name-pc">翠星</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
-                <img src="images/worksバナー1.png" alt="闇鍋姉妹が歌ってみた">
-                <img src="images/worksバナー2.png" alt="闇鍋姉妹イラストギャラリー">
-            </div>
-        </section>
-    </main>
+            
+            <section class="news-section">
+                
+                <h3 class="section-title">
+                    NEWS
+                </h3>
+
+                <div class="container">
+
+                    <ul class="news-list">
+                        <li class="news-list-item">
+                            <p class="post-date">
+                                2021/11/2
+                            </p>
+                            <p class="post-title">
+                                ここにタイトルが入ります。
+                            </p>
+                        </li>
+                        <li class="news-list-item">
+                            <p class="post-date">
+                                2021/11/2
+                            </p>
+                            <p class="post-title">
+                                ここにタイトルが入ります。
+                            </p>
+                        </li>
+                        <li class="news-list-item">
+                            <p class="post-date">
+                                2021/11/2
+                            </p>
+                            <p class="post-title">
+                                ここにタイトルが入ります。
+                            </p>
+                        </li>
+                    </ul>
+
+                    <button class="readmore-btn">
+                        more &gt;
+                    </button>
+                </div>
+            </section>
+
+            <section class="works-section">
+                
+                <h3 class="section-title">
+                    WORKS
+                </h3>
+
+                <div class="container">
+
+                    <img src="images/worksバナー1.png" alt="闇鍋姉妹が歌ってみた">
+                    <img src="images/worksバナー2.png" alt="闇鍋姉妹イラストギャラリー">
+                </div>
+            </section>
+        </main>
+    </div>
+
     <footer class="footer">
         &copy;闇鍋製作委員会
     </footer>
 
     <nav class="bottom-navigation">
+
+        <h3 class="section-title" id="bottom">
+            BOTTOM MENU
+        </h3>
 
         <ul class="nav-list">
             <li class="nav-item">

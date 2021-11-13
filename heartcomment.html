@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ハーコメ生成スクリプト</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <script type="text/javascript">
+        const heart_comment_list = ['ハーコメ1', 'ハーコメ2'];
+        const d = document;
+        function heart_comment_generate() {
+            const target_heart_comment = heart_comment_list[Math.floor(Math.random() * heart_comment_list.length)];
+            d.getElementById('heart_comment').textContent = target_heart_comment;
+        }
+
+        function heart_comment_search() {
+            const v = d.getElementById("heart_comment_text").value;
+
+            // 入力チェックと型チェック
+            const n = Number(v);
+            let typeErrFlg = false;
+            if (v === '') {
+                alert('何かを入力してください。');
+                typeErrFlg = true;
+            } else if (isNaN(n)) {
+                alert('数字を入れてください。');
+                typeErrFlg = true;
+            } else if (n <= 0) {
+                alert('1以上の数字を入れてください。');
+                typeErrFlg = true;
+            }
+
+            const e = d.getElementById('heart_comment_search_result');
+
+            // この時点でエラーの場合はイベント終了
+            if (typeErrFlg) {
+                e.textContent = '';
+                return false;
+            }
+
+            // ハーコメの検索
+            const result = heart_comment_list[n - 1];
+            if (typeof result === 'undefined') {
+                alert('該当するハーコメがありません。');
+                e.textContent = '';
+                return false;
+            }
+
+            e.textContent = result;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container py-5">
+        <p class="lead text-center">すずなの今日のハーコメは：<span id="heart_comment"></span></p>
+        <button onclick="heart_comment_generate()" class=" btn btn-lg bg-primary text-white" style="display: block; margin: 0 auto;">押す</button>
+    </div>
+    <div class="container py-3">
+        <p class="lead">ハーコメを探す：<input type="text" name="" id="heart_comment_text" required="required" class="form-control form-control-sm">
+            <span id="heart_comment_search_result"></span>
+        </p>
+        <button onclick="heart_comment_search()" class=" btn btn-lg bg-primary text-white" style="display: block; margin: 0 auto;">探す</button>
+    </div>
+</body>
+
+</html>
