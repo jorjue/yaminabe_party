@@ -229,6 +229,43 @@ img {
     text-align: center;
 }
 
+.bottom-global-menu {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    bottom: 67px;
+    left: 0;
+    right: 0;
+    background: #e6e6f5;
+}
+
+.global-menu-list {
+    margin-top: 5rem;
+}
+
+.global-menu-item {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2;
+    cursor: pointer;
+    font-family: Yusei-magic, sans-serif;
+
+    &:hover {
+        background-color: #e0e0e0;
+        opacity: .6;
+        transition: .3s;
+    }
+}
+
+.global-logo {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
 // ブレークポイント: 600px
 
 @media (min-width: 600px) {
