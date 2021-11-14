@@ -1,5 +1,5 @@
-jQuery(function ($) {
-    $('#open').on('click', function () {
-        $('#bgMenu').slideToggle();
+jQuery(function($) {
+    $('#open').click(function () {
+        $('#bgMenu').toggleClass('active');
     });
 });
