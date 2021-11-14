@@ -296,9 +296,22 @@ img {
     }
 }
 
-// ブレークポイント: 1000px;
+// ブレークポイント: 1200px;
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
+
+    .pc-view-flex {
+        display: flex;
+    }
+
+    .contents-area {
+        margin: 0;
+        margin-left: 20vw;
+    }
+
+    .header {
+        position: relative;
+    }
 
     .section-title {
         font-size: 3.8rem;
@@ -309,6 +322,9 @@ img {
 
         &-nav {
             display: block;
+            position: fixed;
+            height: 100vh;
+            z-index: 10;
             width: 100%;
             max-width: 20vw;
             text-align: center;
@@ -330,10 +346,6 @@ img {
                 }
             }
         }
-    }
-
-    .contents-area {
-        display: flex;
     }
 
     .main {
@@ -419,9 +431,6 @@ img {
     .bottom-navigation {
         display: none;
     }
-}
-
-@media (min-width: 1200px) {
 
     .sisters-section {
         padding: 40px 120px;
