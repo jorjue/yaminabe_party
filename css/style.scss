@@ -43,7 +43,7 @@ img {
     display: flex;
 
     &-logo {
-        max-height: 80px;
+        max-height: 48px;
         cursor: pointer;
         transition: .3s;
         margin: 0 auto;
@@ -59,14 +59,16 @@ img {
 }
 
 .contents-area {
-    margin-top: 80px;
+    margin-top: 48px;
 }
 
 .top-slider {
-    width: 100%;
+    width: calc( 100% - 32px );
     height: 100%;
     max-height: 100vw;
     object-fit: cover;
+    display: block;
+    margin: 0 auto;
 }
 
 .sisters-section {
@@ -321,6 +323,7 @@ img {
     .side {
 
         &-nav {
+            padding-top: 48px;
             display: block;
             position: fixed;
             height: 100vh;
@@ -352,13 +355,13 @@ img {
         display: flex;
     }
 
-    .side-column {
-        width: 40%;
+    .main-column {
+        max-width: 70%;
     }
 
     .slider {
         width: 100%;
-        max-width: 500px;
+        max-width: 50%;
         margin: 0 auto;
     }
 
@@ -373,12 +376,14 @@ img {
 
     .sisters-list-pc {
         display: flex;
+        justify-content: space-around;
 
 
         &-item {
-            margin-right: 48px;
+            margin-right: 16px;
             cursor: pointer;
             transition: .3s;
+            max-width: 150px;
 
             &:last-child {
                 margin-right: 0;
@@ -392,14 +397,14 @@ img {
     }
 
     .sisters-name-pc {
-        font-size: 2rem;
+        font-size: 1.6rem;
         text-align: center;
         margin-top: 8px;
         font-weight: 200;
     }
 
     .sisters-image-pc {
-        border-radius: 24px;
+        border-radius: 10px;
     }
 
     #haritha-pc .sisters-image-pc {
@@ -418,14 +423,23 @@ img {
         border: 2px solid #3BC313;
     }
 
+    .side-column {
+        background: #f0f0f0;
+        max-width: 370px;
+    }
+
+    .news-section {
+        padding-top: 0;
+    }
+
     .news-list-item {
         text-align: center;
     }
 
     .footer {
         margin: 0;
-        height: 80px;
-        line-height: 80px;
+        height: 40px;
+        line-height: 40px;
     }
 
     .bottom-navigation {
@@ -433,6 +447,6 @@ img {
     }
 
     .sisters-section {
-        padding: 40px 120px;
+        padding: 16px 16px 0;
     }
 }
