@@ -18,8 +18,10 @@
         })(window, document, 'script', 'dataLayer', 'GTM-P9D5K6L');</script>
     <!-- End Google Tag Manager -->
 
+    <!-- reset css -->
     <link rel="stylesheet" href="https://jorjue.github.io/yaminabe_party/css/reset.css">
 
+    <!-- Adobe fonts -->
     <script>
                 (function (d) {
                     var config = {
@@ -31,9 +33,16 @@
                 })(document);
     </script>
 
+    <!-- main css -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- slick -->
+    <link rel="stylesheet" href="slick-theme.css">
+    <link rel="stylesheet" href="slick.css">
+    <script src="slick.min.js"></script>
 </head>
 
 <body>
@@ -42,8 +51,10 @@
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
+    <!-- pcビュー時のflex配置用div -->
     <div class="pc-view-flex">
 
+        <!-- pcビューのみ表示されるサイドナビ -->
         <nav class="side-nav">
 
             <h3 class="section-title">
@@ -60,8 +71,10 @@
             </ul>
         </nav>
 
+        <!-- pcビュー時のメインコンテンツ表示（右側） -->
         <div class="pc-view-right">
 
+            <!-- ヘッダーはspビューのみfixed -->
             <header class="header">
 
                 <h1 class="header-logo">
@@ -72,19 +85,24 @@
 
             </header>
 
+            <!-- pcビュー時のメインコンテンツflex用div -->
             <div class="contents-area">
 
                 <main class="main">
 
                     <div class="main-column">
 
-                        <section class="slider">
+                        <section class="slider-area">
 
                             <h2 class="section-title">
                                 Pickup contents!!
                             </h2>
 
-                            <img src="images/slickbanner1.JPG" alt="" class="top-slider">
+                            <ul class="slider">
+                                <li class="slider-item"><img src="images/slickbanner1.JPG" alt="" class="top-slider"></li>
+                                <li class="slider-item"><img src="images/slickbanner2.JPG" alt="" class="top-slider"></li>
+                                <li class="slider-item"><img src="images/slickbanner2.JPG" alt="" class="top-slider"></li>
+                            </ul>
                         </section>
 
                         <section class="sisters-section">
@@ -138,6 +156,7 @@
                         </section>
                     </div>
 
+                    <!-- pcビュー時の右サイドカラム -->
                     <div class="side-column">
 
                         <section class="news-section">
@@ -201,6 +220,7 @@
                 &copy;闇鍋製作委員会
             </footer>
 
+            <!-- ボトムナビ（tab表示まで) -->
             <nav class="bottom-navigation">
 
                 <h3 class="section-title" id="bottom">

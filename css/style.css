@@ -288,8 +288,7 @@ img {
 
 @media (min-width: 600px) {
   .top-slider {
-    width: 75%;
-    max-height: 75vw;
+    width: 50%;
     margin: 0 auto;
   }
   .sisters-list {
@@ -360,7 +359,7 @@ img {
   .main-column {
     max-width: 70%;
   }
-  .slider {
+  .slider-area {
     width: 100%;
     margin: 0 auto;
   }
