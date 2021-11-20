@@ -81,12 +81,31 @@
     border-bottom: 0.5px solid #9f9f9f;
 }
 
+.movie {
+    padding: 16px;
+    width: 100%;
+    height: calc(100vw * 0.75);
+    margin: 0 auto;
+}
+
 .news-section {
     display: none;
+}
+
+@media (min-width: 600px) {
+    .movie {
+        width: 400px;
+        height: 300px;
+    }
 }
 
 @media (min-width: 1200px) {
     .news-section {
         display: block;
+    }
+
+    .movie {
+        width: 600px;
+        height: 450px;
     }
 }
