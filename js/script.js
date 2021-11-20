@@ -8,8 +8,8 @@ jQuery(function ($) {
         centerPadding: '30px',
         dots: true,
         focusOnSelect: true,
-        dots: false,
-        arrows: false,
+        dots: true,
+        arrows: true,
         autoplay: true,
         autoplaySpeed: 3000,
     });
