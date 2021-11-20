@@ -462,6 +462,10 @@ img {
 /*slick setting*/
 .slick-prev:before,
 .slick-next:before {
-  color: #000;
+  color: #dc143c;
+}
+
+.slick-dots li button:before {
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */
