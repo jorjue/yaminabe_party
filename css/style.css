@@ -51,6 +51,7 @@ img {
 
 .header-logo-image {
   max-width: 144px;
+  max-height: 48px;
 }
 
 .header-logo:hover {
