@@ -49,6 +49,10 @@ img {
   margin: 0 auto;
 }
 
+.header-logo-image {
+  max-width: 144px;
+}
+
 .header-logo:hover {
   opacity: .8;
 }
