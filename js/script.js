@@ -5,13 +5,12 @@ jQuery(function ($) {
 
     $('.slider').slick({
         centerMode: true,
-        centerPadding: '30px',
         dots: true,
         focusOnSelect: true,
         dots: true,
         arrows: true,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 1000,
         responsive :[
             {
                 breakpoint: 1199,

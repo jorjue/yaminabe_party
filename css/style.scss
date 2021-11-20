@@ -1,5 +1,13 @@
 @charset "utf-8";
 
+$main-color: #c1c1ff;
+$sub-color: #8e8eff;
+$font-color: #303030;
+$haritha: #9F9F9F;
+$suzuna: #A111BF;
+$meruru: #E79FD4;
+$suisei: #3BC313;
+
 html {
     font-size: 62.5%;
 }
@@ -12,6 +20,7 @@ body {
         sans-serif;
     font-weight: 300;
     font-style: normal;
+    color: $font-color;
 }
 
 img {
@@ -30,7 +39,7 @@ img {
     font-weight: 400;
     font-style: normal;
     text-align: center;
-    color: #274c7d;
+    color: $sub-color;
     margin: 8px 0;
 }
 
@@ -109,19 +118,19 @@ img {
 }
 
 #haritha .sisters-img {
-    border-color: #9F9F9F;
+    border-color: $haritha;
 }
 
 #suzuna .sisters-img {
-    border-color: #A111BF;
+    border-color: $suzuna;
 }
 
 #meruru .sisters-img {
-    border-color: #E79FD4;
+    border-color: $meruru;
 }
 
 #suisei .sisters-img {
-    border-color: #3BC313;
+    border-color: $suisei;
 }
 
 .sisters-name {
@@ -162,7 +171,7 @@ img {
 .readmore-btn {
     display: block;
     margin: 0 auto;
-    background-color: #e6e6f5;
+    background-color: $main-color;
     padding: 8px 27px;
     border-radius: 27px;
     font-size: 1.2rem;
@@ -192,7 +201,7 @@ img {
 .footer {
     height: 40px;
     text-align: center;
-    background-color: #e0e0e0;
+    background-color: $main-color;
     line-height: 40px;
     margin-bottom: 68px;
 }
@@ -222,7 +231,7 @@ img {
     max-width: 20%;
     height: 48px;
     border: 1px solid white;
-    background-color: #e6e6f5;
+    background-color: $main-color;
 
     &:hover {
         opacity: .6;
@@ -242,7 +251,7 @@ img {
     bottom: -120%;
     left: 0;
     height: calc( 100vh - 67px );
-    background: #e6e6f5;
+    background: $main-color;
     transition: .8s;
 }
 
@@ -262,7 +271,7 @@ img {
     font-family: Yusei-magic, sans-serif;
 
     &:hover {
-        background-color: #e0e0e0;
+        background-color: #c1c1ff;
         opacity: .6;
         transition: .3s;
     }
@@ -318,6 +327,19 @@ img {
 
     .header {
         position: relative;
+        display: none;
+    }
+
+    .pc-header-logo {
+        width: 144px;
+        height: 48px;
+        margin: 8px auto 0;
+        cursor: pointer;
+
+        &:hover {
+            opacity: .8;
+            transition: .3s;
+        }
     }
 
     .section-title {
@@ -328,7 +350,6 @@ img {
     .side {
 
         &-nav {
-            padding-top: 48px;
             display: block;
             position: fixed;
             height: 100vh;
@@ -336,7 +357,7 @@ img {
             width: 100%;
             max-width: 20vw;
             text-align: center;
-            background-color: #e6e6f5;
+            background-color: $main-color;
 
             &-item {
                 font-family: yusei-magic,
@@ -400,7 +421,7 @@ img {
     }
 
     .sisters-name-pc {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         text-align: center;
         margin-top: 8px;
         font-weight: 200;
@@ -414,19 +435,19 @@ img {
     }
 
     #haritha-pc .sisters-image-pc {
-        border: 2px solid #9f9f9f;
+        border: 2px solid $haritha;
     }
 
     #suzuna-pc .sisters-image-pc {
-        border: 2px solid #a111bf;
+        border: 2px solid $suzuna;
     }
 
     #meruru-pc .sisters-image-pc {
-        border: 2px solid #E79FD4;
+        border: 2px solid $meruru;
     }
 
     #suisei-pc .sisters-image-pc {
-        border: 2px solid #3BC313;
+        border: 2px solid $suisei;
     }
 
     .side-column {
@@ -453,26 +474,34 @@ img {
     }
 
     .sisters-section {
-        padding: 32px 16px 0;
+        padding: 0 16px 0;
     }
 }
 
 // slick 
+
+$slider-width: 598px;
+$slider-height: 450px;
+
+@media (min-width: 1300px) {
+    $slider-width: 654px;
+}
+
 .slider {
-    margin: 10px auto;
     width: 100%;
-    max-width: 520px;
-    max-height: 450px;
+    max-width: $slider-width;
+    max-height: $slider-height;
+    margin: 16px auto 0;
 }
 
 .slider-item {
-    margin:0 30px;
+    margin:0 12px;
 }
 
 .slider img {
     height: auto;
     width: 100%;
-    max-height: 450px;
+    max-height: $slider-height;
     object-fit: cover;
 }
 
@@ -486,3 +515,16 @@ img {
     color: red;
 }
 
+.slick-prev {
+    left: 0px;
+    z-index: 10;
+}
+
+.slick-next {
+    right: 0px;
+    z-index: 10;
+}
+
+.slick-dots {
+    bottom: 0px;
+}
