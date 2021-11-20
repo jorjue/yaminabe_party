@@ -50,8 +50,8 @@ img {
 }
 
 .header-logo-image {
-  max-width: 144px;
-  max-height: 48px;
+  width: 144px;
+  height: 48px;
 }
 
 .header-logo:hover {
