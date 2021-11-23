@@ -1,3 +1,7 @@
+.main-visual {
+  pointer-events: none;
+}
+
 .sisters-title {
   font-family: source-han-sans-japanese, sans-serif;
   text-align: center;
@@ -11,7 +15,6 @@
 
 .profile-item {
   border: 0.5px solid #9f9f9f;
-  position: relative;
   padding: 6px;
 }
 
@@ -24,25 +27,35 @@
 }
 
 .sns-link-list {
-  position: absolute;
-  top: 25%;
-  right: 10%;
+  margin-top: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+.sns-link-list .profile-item {
+  border: 0.5px solid #9f9f9f;
+  border-right: none;
+  width: 50%;
+  text-align: center;
+}
+
+.sns-link-list .profile-item:last-child {
+  border-right: 0.5px solid #9f9f9f;
+}
+
 .sns-link-btn {
-  font-size: 1.8rem;
-  margin-left: 10px;
+  font-size: 3.6rem;
+  cursor: pointer;
 }
 
 .sns-link-btn .twitter {
   color: #1da1f2;
 }
 
-.sns-link-btn .casting {
-  color: #3381FF;
+.sns-link-btn .TwitCasting {
+  width: 120px;
+  vertical-align: middle;
 }
 
 .description {
@@ -55,14 +68,14 @@
 }
 
 .profile-table {
-  margin: 0 16px;
+  margin: 16px 16px 0;
   width: 100%;
   border: 0.5px solid #9f9f9f;
   max-width: calc(100vw - 32px);
 }
 
 .profile-table th {
-  width: 40%;
+  width: 50%;
   border-right: 0.5px solid #9f9f9f;
   border-bottom: 0.5px solid #9f9f9f;
   text-align: center;
@@ -70,7 +83,7 @@
 }
 
 .profile-table td {
-  width: 60%;
+  width: 50%;
   border-right: 0.5px solid #9f9f9f;
   border-bottom: 0.5px solid #9f9f9f;
   text-align: center;
@@ -87,21 +100,61 @@
   margin: 0 auto;
 }
 
-.news-section {
-  display: none;
+.unique-section#haritha {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(217, 175, 217, 0.7)), to(rgba(151, 217, 225, 0.7))), url(/images/AdobeStock_780934-min.jpeg);
+  background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%), url(/images/AdobeStock_780934-min.jpeg);
+  background-size: cover;
+  margin-bottom: 16px;
+}
+
+.unique-section#haritha .sisters-title {
+  font-weight: 200;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 8px 0;
+  margin: 0;
+}
+
+.unique-section#haritha .chronology-list {
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.unique-section#haritha .chronology-list .chronorogy-item {
+  padding: 8px 16px;
+  border-bottom: 1px solid #fff;
+}
+
+.unique-section#haritha .chronology-list .chronorogy-item:last-child {
+  border-bottom: none;
 }
 
 @media (min-width: 600px) {
+  .sisters-title {
+    font-size: 2.8rem;
+  }
+  .names {
+    font-size: 2.2rem;
+  }
+  .description {
+    font-size: 1.6rem;
+  }
+  .profile-item {
+    padding: 12px;
+  }
+  .profile-table th, .profile-table td {
+    padding: 8px;
+    font-size: 1.8rem;
+  }
   .movie {
     width: 400px;
     height: 300px;
   }
+  .unique-section#haritha .chronology-list .chronology-item {
+    padding: 8px 32px;
+  }
 }
 
 @media (min-width: 1200px) {
-  .news-section {
-    display: block;
-  }
   .movie {
     width: 600px;
     height: 450px;

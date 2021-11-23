@@ -1,5 +1,9 @@
 @charset 'utf-8';
 
+.main-visual {
+    pointer-events: none;
+}
+
 .sisters-title {
     font-family: source-han-sans-japanese,
     sans-serif;
@@ -14,7 +18,6 @@
 
 .profile-item {
     border: 0.5px solid #9f9f9f;
-    position: relative;
     padding: 6px;
 
     &:first-child {
@@ -27,22 +30,32 @@
 }
 
 .sns-link-list {
-    position: absolute;
-    top: 25%;
-    right: 10%;
+    margin-top: 16px;
     display: flex;
+
+    .profile-item {
+        border: 0.5px solid #9f9f9f;
+        border-right: none;
+        width: 50%;
+        text-align: center;
+
+        &:last-child {
+            border-right: 0.5px solid #9f9f9f;
+        }
+    }
 }
 
 .sns-link-btn {
-    font-size: 1.8rem;
-    margin-left: 10px;
+    font-size: 3.6rem;
+    cursor: pointer;
 
     .twitter {
         color: #1da1f2;
     }
 
-    .casting {
-        color: #3381FF;
+    .TwitCasting {
+        width: 120px;
+        vertical-align: middle;
     }
 }
 
@@ -56,13 +69,13 @@
 }
 
 .profile-table {
-    margin: 0 16px;
+    margin: 16px 16px 0;
     width: 100%;
     border: 0.5px solid #9f9f9f;
     max-width: calc(100vw - 32px);
 
     th {
-        width: 40%;
+        width: 50%;
         border-right: 0.5px solid #9f9f9f;
         border-bottom: 0.5px solid #9f9f9f;
         text-align: center;
@@ -70,7 +83,7 @@
     }
 
     td {
-        width: 60%;
+        width: 50%;
         border-right: 0.5px solid #9f9f9f;
         border-bottom: 0.5px solid #9f9f9f;
         text-align: center;
@@ -88,21 +101,73 @@
     margin: 0 auto;
 }
 
-.news-section {
-    display: none;
+.unique-section#haritha {
+    background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),
+    url(/images/AdobeStock_780934-min.jpeg);
+    background-size: cover;
+    margin-bottom: 16px;
+
+    .sisters-title {
+        font-weight: 200;
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 8px 0;
+        margin: 0;
+    }
+
+    .chronology-list {
+        padding: 8px;
+        background-color: rgba(255, 255, 255, 0.3);
+
+        .chronorogy-item {
+            padding: 8px 16px;
+            border-bottom: 1px solid #fff;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
 }
 
 @media (min-width: 600px) {
+    .sisters-title {
+        font-size: 2.8rem;
+    }
+
+    .names {
+        font-size: 2.2rem;
+    }
+
+    .description {
+        font-size: 1.6rem;
+    }
+
+    .profile-item {
+        padding: 12px;
+    }
+
+    .profile-table th, .profile-table td {
+        padding: 8px;
+        font-size: 1.8rem;
+    }
+
     .movie {
         width: 400px;
         height: 300px;
     }
+
+    .unique-section#haritha {
+
+        .chronology-list {
+
+            .chronology-item {
+                padding: 8px 32px;
+            }
+        }
+    }
 }
 
 @media (min-width: 1200px) {
-    .news-section {
-        display: block;
-    }
 
     .movie {
         width: 600px;

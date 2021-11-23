@@ -27,7 +27,7 @@ img {
   font-weight: 400;
   font-style: normal;
   text-align: center;
-  color: #8e8eff;
+  color: #7e7eff;
   margin: 8px 0;
 }
 
@@ -170,7 +170,7 @@ img {
 .readmore-btn {
   display: block;
   margin: 0 auto;
-  background-color: #c1c1ff;
+  background-color: #d1d1ff;
   padding: 8px 27px;
   border-radius: 27px;
   font-size: 1.2rem;
@@ -202,7 +202,7 @@ img {
 .footer {
   height: 40px;
   text-align: center;
-  background-color: #c1c1ff;
+  background-color: #d1d1ff;
   line-height: 40px;
   margin-bottom: 49px;
 }
@@ -237,7 +237,7 @@ img {
   max-width: 20%;
   height: 48px;
   border: 1px solid white;
-  background-color: #c1c1ff;
+  background-color: #d1d1ff;
 }
 
 .nav-item:hover {
@@ -259,7 +259,7 @@ img {
   left: 0;
   width: 100%;
   height: calc( 100vh - 248px);
-  background: #c1c1ff;
+  background: #d1d1ff;
   -webkit-transition: .8s;
   transition: .8s;
 }
@@ -269,7 +269,7 @@ img {
 }
 
 .global-menu-list {
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .global-menu-item {
@@ -288,9 +288,9 @@ img {
 }
 
 .global-logo {
-  width: 80%;
+  width: 32%;
   display: block;
-  margin: 0 auto;
+  margin: 16px auto 0;
 }
 
 @media (min-width: 600px) {
@@ -354,7 +354,7 @@ img {
     width: 100%;
     max-width: 20vw;
     text-align: center;
-    background-color: #c1c1ff;
+    background-color: #d1d1ff;
   }
   .side-nav-item {
     font-family: yusei-magic, sans-serif;
