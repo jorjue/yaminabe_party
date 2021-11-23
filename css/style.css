@@ -204,7 +204,7 @@ img {
   text-align: center;
   background-color: #c1c1ff;
   line-height: 40px;
-  margin-bottom: 68px;
+  margin-bottom: 49px;
 }
 
 .bottom-navigation {
@@ -257,14 +257,15 @@ img {
   z-index: 9;
   bottom: -120%;
   left: 0;
-  height: calc( 100vh - 67px);
+  width: 100%;
+  height: calc( 100vh - 248px);
   background: #c1c1ff;
   -webkit-transition: .8s;
   transition: .8s;
 }
 
 .active {
-  bottom: 67px;
+  bottom: 48px;
 }
 
 .global-menu-list {
