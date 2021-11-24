@@ -77,7 +77,7 @@ img {
 }
 
 .top-slider {
-    width: calc( 100% - 32px );
+    width: calc(100% - 32px);
     height: 100%;
     max-height: 100vw;
     object-fit: cover;
@@ -201,7 +201,7 @@ img {
 .footer {
     height: 40px;
     text-align: center;
-    background-color: $main-color;
+    background: linear-gradient(to left top, rgba(188, 188, 255, 0.6), rgba(255, 204, 229, 0.6));
     line-height: 40px;
     margin-bottom: 49px;
 }
@@ -251,7 +251,7 @@ img {
     bottom: -120%;
     left: 0;
     width: 100%;
-    height: calc( 100vh - 248px );
+    height: calc(100vh - 248px);
     background: $main-color;
     transition: .8s;
 }
@@ -358,7 +358,7 @@ img {
             width: 100%;
             max-width: 20vw;
             text-align: center;
-            background-color: $main-color;
+            background: linear-gradient(to left top, rgba(188, 188, 255, 0.6), rgba(255, 204, 229, 0.6));
 
             &-item {
                 font-family: yusei-magic,
@@ -368,10 +368,10 @@ img {
                 line-height: 3;
                 cursor: pointer;
                 font-size: 2.2rem;
+                transition: .3s;
 
                 &:hover {
-                    background: #f0f0f0;
-                    opacity: .8;
+                    opacity: .7;
                     transition: .3s;
                 }
             }
@@ -402,7 +402,7 @@ img {
     .sisters-list-pc {
         display: flex;
         justify-content: space-around;
-        padding: 16px calc( 100% - 960px );
+        padding: 16px calc(100% - 960px);
 
 
         &-item {
@@ -481,22 +481,15 @@ img {
 
 // slick 
 
-$slider-width: 598px;
-$slider-height: 450px;
-
-@media (min-width: 1300px) {
-    $slider-width: 654px;
-}
-
 .slider {
     width: 100%;
-    max-width: $slider-width;
-    max-height: $slider-height;
+    max-width: 598px;
+    max-height: auto;
     margin: 16px auto 0;
 }
 
 .slider-item {
-    margin:0 12px;
+    margin: 0 12px;
 }
 
 .slider img {
