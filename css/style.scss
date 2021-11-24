@@ -323,7 +323,7 @@ img {
 
     .contents-area {
         margin: 0;
-        margin-left: 20vw;
+        margin-left: 15vw;
     }
 
     .header {
@@ -356,7 +356,7 @@ img {
             height: 100vh;
             z-index: 10;
             width: 100%;
-            max-width: 20vw;
+            max-width: 15vw;
             text-align: center;
             background: linear-gradient(to left top, rgba(188, 188, 255, 0.6), rgba(255, 204, 229, 0.6));
 
@@ -383,7 +383,7 @@ img {
     }
 
     .main-column {
-        max-width: 70%;
+        max-width: 55vw;
     }
 
     .pickup-section {
@@ -453,7 +453,7 @@ img {
 
     .side-column {
         background: #f0f0f0;
-        max-width: 370px;
+        width: 25vw;
     }
 
     .news-section {
@@ -483,19 +483,22 @@ img {
 
 .slider {
     width: 100%;
-    max-width: 598px;
-    max-height: auto;
-    margin: 16px auto 0;
+    max-width: 1064px;
+    max-height: 50vh;
+    margin: 16px auto;
 }
 
 .slider-item {
     margin: 0 12px;
 }
 
+.slick-dotted.slick-slider {
+    margin-bottom: 16px;
+}
+
 .slider img {
-    height: auto;
+    height: 50vh;
     width: 100%;
-    max-height: $slider-height;
     object-fit: cover;
 }
 
