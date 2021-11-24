@@ -231,7 +231,7 @@ img {
     max-width: 20%;
     height: 48px;
     border: 1px solid white;
-    background-color: $main-color;
+    background: linear-gradient(to left top, rgba(188, 188, 255, 0.6), rgba(255, 204, 229, 0.6));
 
     &:hover {
         opacity: .6;
@@ -251,8 +251,8 @@ img {
     bottom: -120%;
     left: 0;
     width: 100%;
-    height: calc(100vh - 248px);
-    background: $main-color;
+    height: 55vh;
+    background: linear-gradient(to left top, rgba(188, 188, 255, 0.9), rgba(255, 204, 229, 0.9));
     transition: .8s;
 }
 
@@ -524,4 +524,11 @@ img {
 
 .slick-dots {
     bottom: 0px;
+}
+
+// ハンバーガーメニュー用
+
+.fixed {
+    position: fixed;
+    width: 100%;
 }

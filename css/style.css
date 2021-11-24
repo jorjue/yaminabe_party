@@ -238,7 +238,8 @@ img {
   max-width: 20%;
   height: 48px;
   border: 1px solid white;
-  background-color: #d1d1ff;
+  background: -webkit-gradient(linear, right bottom, left top, from(rgba(188, 188, 255, 0.6)), to(rgba(255, 204, 229, 0.6)));
+  background: linear-gradient(to left top, rgba(188, 188, 255, 0.6), rgba(255, 204, 229, 0.6));
 }
 
 .nav-item:hover {
@@ -259,8 +260,9 @@ img {
   bottom: -120%;
   left: 0;
   width: 100%;
-  height: calc(100vh - 248px);
-  background: #d1d1ff;
+  height: 55vh;
+  background: -webkit-gradient(linear, right bottom, left top, from(rgba(188, 188, 255, 0.9)), to(rgba(255, 204, 229, 0.9)));
+  background: linear-gradient(to left top, rgba(188, 188, 255, 0.9), rgba(255, 204, 229, 0.9));
   -webkit-transition: .8s;
   transition: .8s;
 }
@@ -505,5 +507,10 @@ img {
 
 .slick-dots {
   bottom: 0px;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
