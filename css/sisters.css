@@ -18,6 +18,10 @@
   padding: 6px;
 }
 
+.profile-item.suzuna {
+  border-color: #A111BF;
+}
+
 .profile-item:first-child {
   border-bottom: none;
 }
@@ -44,6 +48,10 @@
   border-right: 0.5px solid #9f9f9f;
 }
 
+.sns-link-list .profile-item.suzuna {
+  border-color: #A111BF;
+}
+
 .sns-link-btn {
   font-size: 3.6rem;
   cursor: pointer;
@@ -55,6 +63,11 @@
 
 .sns-link-btn .TwitCasting {
   width: 120px;
+  vertical-align: middle;
+}
+
+.sns-link-btn .spoon {
+  width: 60px;
   vertical-align: middle;
 }
 
@@ -82,11 +95,23 @@
   padding: 4px 6px;
 }
 
+.profile-table th.suzuna {
+  border-color: #A111BF;
+}
+
 .profile-table td {
   width: 50%;
   border-right: 0.5px solid #9f9f9f;
   border-bottom: 0.5px solid #9f9f9f;
   text-align: center;
+}
+
+.profile-table td.suzuna {
+  border-color: #A111BF;
+}
+
+.profile-table.suzuna {
+  border-color: #A111BF;
 }
 
 .last {

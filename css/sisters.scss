@@ -1,5 +1,13 @@
 @charset 'utf-8';
 
+$main-color: #d1d1ff;
+$sub-color: #7e7eff;
+$font-color: #303030;
+$haritha: #9F9F9F;
+$suzuna: #A111BF;
+$meruru: #E79FD4;
+$suisei: #3BC313;
+
 .main-visual {
     pointer-events: none;
 }
@@ -20,6 +28,10 @@
     border: 0.5px solid #9f9f9f;
     padding: 6px;
 
+    &.suzuna {
+        border-color: $suzuna;
+    }
+
     &:first-child {
         border-bottom: none;
     }
@@ -39,8 +51,13 @@
         width: 50%;
         text-align: center;
 
+        
         &:last-child {
             border-right: 0.5px solid #9f9f9f;
+        }
+
+        &.suzuna {
+            border-color: $suzuna;
         }
     }
 }
@@ -55,6 +72,11 @@
 
     .TwitCasting {
         width: 120px;
+        vertical-align: middle;
+    }
+
+    .spoon {
+        width: 60px;
         vertical-align: middle;
     }
 }
@@ -80,6 +102,10 @@
         border-bottom: 0.5px solid #9f9f9f;
         text-align: center;
         padding: 4px 6px;
+
+        &.suzuna {
+            border-color: $suzuna;
+        }
     }
 
     td {
@@ -87,6 +113,14 @@
         border-right: 0.5px solid #9f9f9f;
         border-bottom: 0.5px solid #9f9f9f;
         text-align: center;
+
+        &.suzuna {
+            border-color: $suzuna;
+        }
+    }
+
+    &.suzuna {
+        border-color: $suzuna;
     }
 }
 
