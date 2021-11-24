@@ -251,17 +251,13 @@ img {
     bottom: -120%;
     left: 0;
     width: 100%;
-    height: 55vh;
+    // height: 55vh;
     background: linear-gradient(to left top, rgba(188, 188, 255, 0.9), rgba(255, 204, 229, 0.9));
     transition: .8s;
 }
 
 .active {
     bottom: 48px;
-}
-
-.global-menu-list {
-    margin-top: 2rem;
 }
 
 .global-menu-item {
@@ -529,6 +525,6 @@ img {
 // ハンバーガーメニュー用
 
 .fixed {
-    position: fixed;
-    width: 100%;
+    overflow: hidden;
+    user-select: none;
 }
