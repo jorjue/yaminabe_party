@@ -101,8 +101,8 @@
 }
 
 .unique-section#haritha {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(217, 175, 217, 0.7)), to(rgba(151, 217, 225, 0.7))), url(/images/AdobeStock_780934-min.jpeg);
-  background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%), url(/images/AdobeStock_780934-min.jpeg);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(217, 175, 217, 0.7)), to(rgba(151, 217, 225, 0.7))), url(../images/AdobeStock_780934-min.jpeg);
+  background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%), url(../images/AdobeStock_780934-min.jpeg);
   background-size: cover;
   margin-bottom: 16px;
 }
