@@ -131,6 +131,10 @@
     }
 }
 
+.side-visual {
+    display: none;
+}
+
 @media (min-width: 600px) {
     .sisters-title {
         font-size: 2.8rem;
@@ -168,5 +172,10 @@
 
     .profile-table {
         max-width: calc(100% - 32px);
+    }
+
+    .side-visual {
+        display: block;
+        width: 25vw;
     }
 }
