@@ -1,3 +1,7 @@
+.main-column {
+  max-width: 70%;
+}
+
 .main-visual {
   pointer-events: none;
 }
@@ -94,10 +98,10 @@
 }
 
 .movie {
-  padding: 16px;
-  width: 100%;
+  width: calc(100% - 32px);
   height: calc(100vw * 0.75);
-  margin: 0 auto;
+  max-height: 450px;
+  margin: 16px auto;
 }
 
 .unique-section#haritha {
@@ -105,6 +109,8 @@
   background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%), url(../images/AdobeStock_780934-min.jpeg);
   background-size: cover;
   margin-bottom: 16px;
+  max-width: calc(100% - 32px);
+  margin: 0 auto 16px;
 }
 
 .unique-section#haritha .sisters-title {
@@ -145,19 +151,14 @@
     padding: 8px;
     font-size: 1.8rem;
   }
-  .movie {
-    width: 400px;
-    height: 300px;
-  }
-  .unique-section#haritha .chronology-list .chronology-item {
-    padding: 8px 32px;
+  .unique-section#haritha .chronology-list .chronorogy-item {
+    padding: 16px 48px;
   }
 }
 
 @media (min-width: 1200px) {
-  .movie {
-    width: 600px;
-    height: 450px;
+  .profile-table {
+    max-width: calc(100% - 32px);
   }
 }
 /*# sourceMappingURL=sisters.css.map */

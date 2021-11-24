@@ -1,5 +1,9 @@
 @charset 'utf-8';
 
+.main-column {
+    max-width: 70%;
+}
+
 .main-visual {
     pointer-events: none;
 }
@@ -95,10 +99,10 @@
 }
 
 .movie {
-    padding: 16px;
-    width: 100%;
+    width: calc(100% - 32px);
     height: calc(100vw * 0.75);
-    margin: 0 auto;
+    max-height: 450px;
+    margin: 16px auto;
 }
 
 .unique-section#haritha {
@@ -106,6 +110,8 @@
     url(../images/AdobeStock_780934-min.jpeg);
     background-size: cover;
     margin-bottom: 16px;
+    max-width: calc(100% - 32px);
+    margin: 0 auto 16px;
 
     .sisters-title {
         font-weight: 200;
@@ -151,17 +157,12 @@
         font-size: 1.8rem;
     }
 
-    .movie {
-        width: 400px;
-        height: 300px;
-    }
-
     .unique-section#haritha {
 
         .chronology-list {
 
-            .chronology-item {
-                padding: 8px 32px;
+            .chronorogy-item {
+                padding: 16px 48px;
             }
         }
     }
@@ -169,8 +170,7 @@
 
 @media (min-width: 1200px) {
 
-    .movie {
-        width: 600px;
-        height: 450px;
+    .profile-table {
+        max-width: calc(100% - 32px);
     }
 }
