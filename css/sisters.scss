@@ -10,6 +10,10 @@ $suisei: #3BC313;
 
 .main-visual {
     pointer-events: none;
+    width: 100vw;
+    height: 100vw;
+    object-fit: cover;
+    object-position: right;
 }
 
 .sisters-title {
@@ -30,6 +34,9 @@ $suisei: #3BC313;
 
     &.suzuna {
         border-color: $suzuna;
+    }
+    &.meruru {
+        border-color: $meruru;
     }
 
     &:first-child {
@@ -58,6 +65,9 @@ $suisei: #3BC313;
 
         &.suzuna {
             border-color: $suzuna;
+        }
+        &.meruru {
+            border-color: $meruru;
         }
     }
 }
@@ -106,6 +116,9 @@ $suisei: #3BC313;
         &.suzuna {
             border-color: $suzuna;
         }
+        &.meruru {
+            border-color: $meruru;
+        }
     }
 
     td {
@@ -117,10 +130,16 @@ $suisei: #3BC313;
         &.suzuna {
             border-color: $suzuna;
         }
+        &.meruru {
+            border-color: $meruru;
+        }
     }
 
     &.suzuna {
         border-color: $suzuna;
+    }
+    &.meruru {
+        border-color: $meruru;
     }
 }
 
@@ -154,7 +173,97 @@ $suisei: #3BC313;
         padding: 8px;
         background-color: rgba(255, 255, 255, 0.3);
 
-        .chronorogy-item {
+        .chronology-item {
+            padding: 8px 16px;
+            border-bottom: 1px solid #fff;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+.unique-section#suzuna {
+    background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),
+        url(../images/AdobeStock_135113559-min.jpeg);
+    background-size: cover;
+    margin-bottom: 16px;
+    max-width: calc(100% - 32px);
+    margin: 0 auto 16px;
+
+    .sisters-title {
+        font-weight: 200;
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 8px 0;
+        margin: 0;
+    }
+
+    .quotations-list {
+        padding: 8px;
+        background-color: rgba(255, 255, 255, 0.3);
+
+        .quotations-item {
+            padding: 8px 16px;
+            border-bottom: 1px solid #fff;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+.unique-section#meruru {
+    background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),
+        url(../images/AdobeStock_222049450-min.jpeg);
+    background-size: cover;
+    margin-bottom: 16px;
+    max-width: calc(100% - 32px);
+    margin: 0 auto 16px;
+
+    .sisters-title {
+        font-weight: 200;
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 8px 0;
+        margin: 0;
+    }
+
+    .quotations-list {
+        padding: 8px;
+        background-color: rgba(255, 255, 255, 0.3);
+
+        .quotations-item {
+            padding: 8px 16px;
+            border-bottom: 1px solid #fff;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+.unique-section#suisei {
+    background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),
+        url(../images/AdobeStock_50547557-min.jpeg);
+    background-size: cover;
+    margin-bottom: 16px;
+    max-width: calc(100% - 32px);
+    margin: 0 auto 16px;
+
+    .sisters-title {
+        font-weight: 200;
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 8px 0;
+        margin: 0;
+    }
+
+    .quotations-list {
+        padding: 8px;
+        background-color: rgba(255, 255, 255, 0.3);
+
+        .quotations-item {
             padding: 8px 16px;
             border-bottom: 1px solid #fff;
 
@@ -203,6 +312,11 @@ $suisei: #3BC313;
 }
 
 @media (min-width: 1200px) {
+
+    .main-visual {
+        width: 100%;
+        height: 60vh;
+    }
 
     .profile-table {
         max-width: calc(100% - 32px);

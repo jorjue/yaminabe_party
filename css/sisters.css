@@ -1,5 +1,11 @@
 .main-visual {
   pointer-events: none;
+  width: 100vw;
+  height: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
 }
 
 .sisters-title {
@@ -20,6 +26,10 @@
 
 .profile-item.suzuna {
   border-color: #A111BF;
+}
+
+.profile-item.meruru {
+  border-color: #E79FD4;
 }
 
 .profile-item:first-child {
@@ -50,6 +60,10 @@
 
 .sns-link-list .profile-item.suzuna {
   border-color: #A111BF;
+}
+
+.sns-link-list .profile-item.meruru {
+  border-color: #E79FD4;
 }
 
 .sns-link-btn {
@@ -99,6 +113,10 @@
   border-color: #A111BF;
 }
 
+.profile-table th.meruru {
+  border-color: #E79FD4;
+}
+
 .profile-table td {
   width: 50%;
   border-right: 0.5px solid #9f9f9f;
@@ -110,8 +128,16 @@
   border-color: #A111BF;
 }
 
+.profile-table td.meruru {
+  border-color: #E79FD4;
+}
+
 .profile-table.suzuna {
   border-color: #A111BF;
+}
+
+.profile-table.meruru {
+  border-color: #E79FD4;
 }
 
 .last {
@@ -146,12 +172,102 @@
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.unique-section#haritha .chronology-list .chronorogy-item {
+.unique-section#haritha .chronology-list .chronology-item {
   padding: 8px 16px;
   border-bottom: 1px solid #fff;
 }
 
-.unique-section#haritha .chronology-list .chronorogy-item:last-child {
+.unique-section#haritha .chronology-list .chronology-item:last-child {
+  border-bottom: none;
+}
+
+.unique-section#suzuna {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(217, 175, 217, 0.7)), to(rgba(151, 217, 225, 0.7))), url(../images/AdobeStock_135113559-min.jpeg);
+  background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%), url(../images/AdobeStock_135113559-min.jpeg);
+  background-size: cover;
+  margin-bottom: 16px;
+  max-width: calc(100% - 32px);
+  margin: 0 auto 16px;
+}
+
+.unique-section#suzuna .sisters-title {
+  font-weight: 200;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 8px 0;
+  margin: 0;
+}
+
+.unique-section#suzuna .quotations-list {
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.unique-section#suzuna .quotations-list .quotations-item {
+  padding: 8px 16px;
+  border-bottom: 1px solid #fff;
+}
+
+.unique-section#suzuna .quotations-list .quotations-item:last-child {
+  border-bottom: none;
+}
+
+.unique-section#meruru {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(217, 175, 217, 0.7)), to(rgba(151, 217, 225, 0.7))), url(../images/AdobeStock_222049450-min.jpeg);
+  background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%), url(../images/AdobeStock_222049450-min.jpeg);
+  background-size: cover;
+  margin-bottom: 16px;
+  max-width: calc(100% - 32px);
+  margin: 0 auto 16px;
+}
+
+.unique-section#meruru .sisters-title {
+  font-weight: 200;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 8px 0;
+  margin: 0;
+}
+
+.unique-section#meruru .quotations-list {
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.unique-section#meruru .quotations-list .quotations-item {
+  padding: 8px 16px;
+  border-bottom: 1px solid #fff;
+}
+
+.unique-section#meruru .quotations-list .quotations-item:last-child {
+  border-bottom: none;
+}
+
+.unique-section#suisei {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(217, 175, 217, 0.7)), to(rgba(151, 217, 225, 0.7))), url(../images/AdobeStock_50547557-min.jpeg);
+  background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%), url(../images/AdobeStock_50547557-min.jpeg);
+  background-size: cover;
+  margin-bottom: 16px;
+  max-width: calc(100% - 32px);
+  margin: 0 auto 16px;
+}
+
+.unique-section#suisei .sisters-title {
+  font-weight: 200;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 8px 0;
+  margin: 0;
+}
+
+.unique-section#suisei .quotations-list {
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.unique-section#suisei .quotations-list .quotations-item {
+  padding: 8px 16px;
+  border-bottom: 1px solid #fff;
+}
+
+.unique-section#suisei .quotations-list .quotations-item:last-child {
   border-bottom: none;
 }
 
@@ -182,6 +298,10 @@
 }
 
 @media (min-width: 1200px) {
+  .main-visual {
+    width: 100%;
+    height: 60vh;
+  }
   .profile-table {
     max-width: calc(100% - 32px);
   }
