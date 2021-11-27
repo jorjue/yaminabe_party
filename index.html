@@ -23,14 +23,14 @@
 
     <!-- Adobe fonts -->
     <script>
-                (function (d) {
-                    var config = {
-                        kitId: 'atm3zid',
-                        scriptTimeout: 3000,
-                        async: true
-                    },
-                        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
-                })(document);
+        (function (d) {
+            var config = {
+                kitId: 'atm3zid',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
     </script>
 
     <!-- slick -->
@@ -135,12 +135,16 @@
                                         </a>
                                     </li>
                                     <li class="sisters-list-item" id="meruru">
-                                        <img src="images/meruru_face2.jpg" alt="めるる" class="sisters-img">
-                                        <p class="sisters-name">めるる</p>
+                                        <a href="meruru.html">
+                                            <img src="images/meruru_face2.jpg" alt="めるる" class="sisters-img">
+                                            <p class="sisters-name">めるる</p>
+                                        </a>
                                     </li>
                                     <li class="sisters-list-item" id="suisei">
-                                        <img src="images/suisei_face2.jpg" alt="翠星" class="sisters-img">
-                                        <p class="sisters-name">翠星</p>
+                                        <a href="suisei.html">
+                                            <img src="images/suisei_face2.jpg" alt="翠星" class="sisters-img">
+                                            <p class="sisters-name">翠星</p>
+                                        </a>
                                     </li>
                                 </ul>
 
@@ -159,12 +163,16 @@
                                         </a>
                                     </li>
                                     <li class="sisters-list-pc-item" id="meruru-pc">
-                                        <img src="images/meruru_face.jpg" alt="めるる" class="sisters-image-pc">
-                                        <p class="sisters-name-pc">めるる</p>
+                                        <a href="meruru.html">
+                                            <img src="images/meruru_face.jpg" alt="めるる" class="sisters-image-pc">
+                                            <p class="sisters-name-pc">めるる</p>
+                                        </a>
                                     </li>
                                     <li class="sisters-list-pc-item" id="suisei-pc">
-                                        <img src="images/suisei_face.jpg" alt="翠星" class="sisters-image-pc">
-                                        <p class="sisters-name-pc">翠星</p>
+                                        <a href="suisei.html">
+                                            <img src="images/suisei_face.jpg" alt="翠星" class="sisters-image-pc">
+                                            <p class="sisters-name-pc">翠星</p>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -275,9 +283,9 @@
                 </ul>
             </nav>
 
-            
+
         </div>
-        
+
     </div>
     <!-- sp表示時のグローバルハンバーガーメニュー -->
     <nav class="bottom-global-menu" id="bgMenu">
