@@ -1,0 +1,29 @@
+@charset 'utf-8';
+
+$main-color: #d1d1ff;
+$sub-color: #7e7eff;
+$font-color: #303030;
+$haritha: #9F9F9F;
+$suzuna: #A111BF;
+$meruru: #E79FD4;
+$suisei: #3BC313;
+
+.about-contents {
+    background-image: url(../images/slickbanner2.JPG);
+    background-size: cover;
+    background-color:rgba(255, 255, 255, 0.75);
+    background-blend-mode:lighten;
+    padding: 32px 16px;
+}
+
+.contents-title {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contents-text {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
