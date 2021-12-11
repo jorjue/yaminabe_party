@@ -170,11 +170,13 @@ img {
 .readmore-btn {
   display: block;
   margin: 0 auto;
-  background-color: #d1d1ff;
   padding: 8px 27px;
+  border: 1px solid #909090;
   border-radius: 27px;
   font-size: 1.2rem;
   cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .readmore-btn:hover {
@@ -182,6 +184,8 @@ img {
   opacity: .7;
   -webkit-transition: .3s;
   transition: .3s;
+  background-color: #7e7eff;
+  color: white;
 }
 
 .works-section {

@@ -171,16 +171,19 @@ img {
 .readmore-btn {
     display: block;
     margin: 0 auto;
-    background-color: $main-color;
     padding: 8px 27px;
+    border: 1px solid #909090;
     border-radius: 27px;
     font-size: 1.2rem;
     cursor: pointer;
+    transition: .3s;
 
     &:hover {
         text-decoration: underline;
         opacity: .7;
         transition: .3s;
+        background-color: $sub-color;
+        color: white;   
     }
 }
 
