@@ -20,76 +20,87 @@
   margin-bottom: 3rem;
 }
 
-.link-contents {
-  background-image: url(../images/banner_wide.jpg);
-  background-size: cover;
-  background-color: rgba(255, 255, 255, 0.8);
-  background-blend-mode: lighten;
-  background-position: right;
-  padding: 16px;
+.twitter-link-area {
+  border: 2px solid #909090;
+  border-radius: 20px;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .sister-name {
-  font-size: 1.8rem;
   text-align: center;
-  font-weight: 300;
-  margin-bottom: 16px;
 }
 
-.link-list {
-  margin-bottom: 18px;
-}
-
-.link-item {
-  border: 1px solid #909090;
-  text-align: center;
-  max-width: calc( 100% - 32px);
-  line-height: 2;
-  cursor: pointer;
-  -webkit-transition: .3;
-  transition: .3;
-  border-radius: 4px;
-  font-size: 3rem;
-  color: #1da1f2;
-  display: block;
-  margin: 0 auto 16px;
-}
-
-.link-item .twitcasting {
-  width: 40%;
-  vertical-align: middle;
-  line-height: 1.8;
-}
-
-.link-item .spoon {
-  width: 32%;
-}
-
-.link-item:hover {
-  opacity: .8;
-  -webkit-transition: .3s;
-  transition: .3s;
-  background-color: #d1d1ff;
-}
-
-.logo-icon {
-  max-width: 80px;
-  max-height: 50px;
+.twitter-link-img {
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 50%;
+}
+
+.twitter-link-img#haritha {
+  border: 1px solid #9F9F9F;
+}
+
+.twitter-link-img#suzuna {
+  border: 1px solid #A111BF;
+}
+
+.twitter-link-img#meruru {
+  border: 1px solid #E79FD4;
+}
+
+.twitter-link-img#suisei {
+  border: 1px solid #3BC313;
+}
+
+.icon-box {
+  position: relative;
+}
+
+.twitter-img {
+  width: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+.icon-title {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  -webkit-transform: translate(-50%, 75%);
+          transform: translate(-50%, 75%);
+  font-weight: 600;
+  color: white;
 }
 
 @media (min-width: 1200px) {
   .about-contents {
     width: 55vw;
   }
-  .link-contents {
+  .twitter-link-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
   }
-  .link-content {
-    max-width: 25%;
+  .twitter-link-list::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    position: absolute;
+    bottom: -17px;
+    left: 50%;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    border-bottom: 2px solid #909090;
+    border-right: 2px solid #909090;
+  }
+  .twitter-link-items {
+    max-width: calc( 100% / 4 - 32px);
+    margin: 16px auto;
   }
 }
 /*# sourceMappingURL=about.css.map */

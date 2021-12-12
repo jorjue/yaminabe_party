@@ -31,60 +31,55 @@ $twitter: #1da1f2;
     margin-bottom: 3rem;
 }
 
-.link-contents {
-    background-image: url(../images/banner_wide.jpg);
-    background-size: cover;
-    background-color: rgba(255, 255, 255, 0.8);
-    background-blend-mode: lighten;
-    background-position: right;
-    padding: 16px;
+.twitter-link-area {
+    border: 2px solid #909090;
+    border-radius: 20px;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .sister-name {
-    font-size: 1.8rem;
     text-align: center;
-    font-weight: 300;
-    margin-bottom: 16px;
 }
 
-.link-list {
-    margin-bottom: 18px;
-}
-
-.link-item {
-    border: 1px solid #909090;
-    text-align: center;
-    max-width: calc( 100% - 32px );
-    line-height: 2;
-    cursor: pointer;
-    transition: .3;
-    border-radius: 4px;
-    font-size: 3rem;
-    color: $twitter;
-    display: block;
-    margin: 0 auto 16px;
-
-    .twitcasting {
-        width: 40%;
-        vertical-align: middle;
-        line-height: 1.8;
-    }
-    
-    .spoon {
-        width: 32%;
-    }
-
-    &:hover {
-        opacity: .8;
-        transition: .3s;
-        background-color: $main-color;
-    }
-}
-
-.logo-icon {
-    max-width: 80px;
-    max-height: 50px;
+.twitter-link-img {
     object-fit: cover;
+    border-radius: 50%;
+
+    &#haritha {
+        border: 1px solid $haritha;
+    }
+
+    &#suzuna {
+        border: 1px solid $suzuna;
+    }
+
+    &#meruru {
+        border: 1px solid $meruru;
+    }
+
+    &#suisei {
+        border: 1px solid $suisei;
+    }
+}
+
+.icon-box {
+    position: relative;
+}
+
+.twitter-img {
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+
+.icon-title {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate( -50%, 75%);
+    font-weight: 600;
+    color: white;
 }
 
 @media (min-width: 1200px) {
@@ -93,11 +88,27 @@ $twitter: #1da1f2;
         width: 55vw;
     }
 
-    .link-contents {
+    .twitter-link-list {
         display: flex;
+        flex-wrap: wrap;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            position: absolute;
+            bottom: -17px;
+            left: 50%;
+            transform: rotate(45deg);
+            border-bottom: 2px solid #909090;
+            border-right: 2px solid #909090;
+        }
     }
 
-    .link-content {
-        max-width: 25%;
+    .twitter-link-items {
+        max-width: calc( 100% / 4 - 32px);
+        margin: 16px auto;
     }
 }
