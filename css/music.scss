@@ -1,0 +1,70 @@
+@charset 'utf-8';
+
+.music-section {
+    padding: 0 16px;
+}
+
+.music-items {
+    margin-bottom: 32px;
+    cursor: pointer;
+    transition: .3s;
+    background: #f7f7f7;
+    padding-bottom: 8px;
+
+    &:hover {
+        opacity: .8;
+        transition: .3s;
+    }
+
+    .post-title, .post-date {
+        text-align: center;
+    }
+
+    .post-title {
+        font-size: 1.8rem;
+    }
+
+    .post-cast {
+        text-align: center;
+        text-decoration: underline;
+        font-weight: 400;
+    }
+}
+
+.music-thumbnail {
+    border: 1px solid #909090;
+    margin-bottom: 8px;
+}
+
+.search {
+    margin-bottom: 16px;
+}
+
+.music-search {
+    border: 1px solid #909090;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 32px 0 16px;
+}
+
+@media (min-width: 1200px) {
+
+    .music-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .music-items {
+        max-width: calc( 100% / 3 - 8px);
+        
+        .post-title {
+            font-size: 1.4rem;
+        }
+
+        .post-date, .post-cast {
+            font-size: 1.2rem;
+        }
+    }
+}
