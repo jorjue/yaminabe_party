@@ -1,5 +1,14 @@
 @charset 'utf-8';
 
+$main-color: #d1d1ff;
+$sub-color: #7e7eff;
+$font-color: #303030;
+$haritha: #9F9F9F;
+$suzuna: #A111BF;
+$meruru: #E79FD4;
+$suisei: #3BC313;
+$twitter: #1da1f2;
+
 .music-section {
     padding: 0 16px;
 }
@@ -37,15 +46,24 @@
 }
 
 .search {
-    margin-bottom: 16px;
+    margin: 32px 0;
 }
 
 .music-search {
     border: 1px solid #909090;
+    width: 75%;
     border-radius: 20px;
     display: block;
     margin: 0 auto;
     padding: 0 32px 0 16px;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        right: -20px;
+        padding: 16px;
+        content: url(../images/detecting.png);
+    }
 }
 
 @media (min-width: 1200px) {

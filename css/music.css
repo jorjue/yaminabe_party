@@ -37,15 +37,24 @@
 }
 
 .search {
-  margin-bottom: 16px;
+  margin: 32px 0;
 }
 
 .music-search {
   border: 1px solid #909090;
+  width: 75%;
   border-radius: 20px;
   display: block;
   margin: 0 auto;
   padding: 0 32px 0 16px;
+  position: relative;
+}
+
+.music-search::after {
+  position: absolute;
+  right: -20px;
+  padding: 16px;
+  content: url(../images/detecting.png);
 }
 
 @media (min-width: 1200px) {

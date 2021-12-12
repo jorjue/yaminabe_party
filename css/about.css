@@ -29,34 +29,47 @@
   padding: 16px;
 }
 
+.sister-name {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
 .link-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-bottom: 18px;
 }
 
-.link-items {
+.link-item {
   border: 1px solid #909090;
-  width: calc(25% - 16px);
   text-align: center;
-  line-height: 3;
+  max-width: calc( 100% - 32px);
+  line-height: 2;
   cursor: pointer;
   -webkit-transition: .3;
   transition: .3;
   border-radius: 4px;
+  font-size: 3rem;
+  color: #1da1f2;
+  display: block;
+  margin: 0 auto 16px;
 }
 
-.link-items:hover {
+.link-item .twitcasting {
+  width: 40%;
+  vertical-align: middle;
+  line-height: 1.8;
+}
+
+.link-item .spoon {
+  width: 32%;
+}
+
+.link-item:hover {
   opacity: .8;
   -webkit-transition: .3s;
   transition: .3s;
-  background-color: #7e7eff;
-  color: white;
-  text-decoration: underline;
+  background-color: #d1d1ff;
 }
 
 .logo-icon {
@@ -69,6 +82,14 @@
 @media (min-width: 1200px) {
   .about-contents {
     width: 55vw;
+  }
+  .link-contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .link-content {
+    max-width: 25%;
   }
 }
 /*# sourceMappingURL=about.css.map */
