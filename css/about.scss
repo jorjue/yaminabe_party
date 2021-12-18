@@ -31,7 +31,7 @@ $twitter: #1da1f2;
     margin-bottom: 3rem;
 }
 
-.twitter-link-area {
+.sns-link-area {
     border: 2px solid #909090;
     border-radius: 20px;
     max-width: 80%;
@@ -42,7 +42,21 @@ $twitter: #1da1f2;
     text-align: center;
 }
 
-.twitter-link-img {
+.sns-link-items {
+    cursor: pointer;
+}
+
+.sns-link-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 16px 0;
+}
+
+.sns-link-img {
+    width: 120px;
+    margin: 0 auto;
+    display: block;
     object-fit: cover;
     border-radius: 50%;
 
@@ -67,19 +81,34 @@ $twitter: #1da1f2;
     position: relative;
 }
 
-.twitter-img {
+.sns-img {
     width: 150px;
     margin: 0 auto;
     display: block;
+    position: relative;
+    left: 10px;
+
+    &#twitcasting {
+        border-radius: 20px;
+        width: 120px;
+        top: 10px;
+        margin-bottom: 46px;
+    }
 }
 
 .icon-title {
     position: absolute;
     left: 50%;
     bottom: 50%;
-    transform: translate( -50%, 75%);
+    transform: translate( -40%, 75%);
     font-weight: 600;
     color: white;
+    user-select: none;
+
+    &#twicas {
+        bottom: 88%;
+        font-size: 1.2rem;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -88,7 +117,7 @@ $twitter: #1da1f2;
         width: 55vw;
     }
 
-    .twitter-link-list {
+    .sns-link-list {
         display: flex;
         flex-wrap: wrap;
         position: relative;
@@ -107,8 +136,30 @@ $twitter: #1da1f2;
         }
     }
 
-    .twitter-link-items {
+    .sns-link-items {
         max-width: calc( 100% / 4 - 32px);
         margin: 16px auto;
+    }
+
+    .sns-img {
+
+        &#twitcasting {
+            top: 30px;
+        }
+    }
+
+    .icon-title {
+
+        &#twicas {
+            bottom: 72%;
+        }
+    }
+
+    .sns-link-list {
+        margin: 0;
+    }
+
+    .sns-link-img {
+        width: 300px;
     }
 }
