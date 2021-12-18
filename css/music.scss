@@ -66,12 +66,22 @@ $twitter: #1da1f2;
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 600px) {
 
     .music-list {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
+    }
+
+    .music-items {
+        max-width: calc( 100% / 2 - 16px);
+    }
+}
+
+@media (min-width: 800px) {
+    .music-list {
+        justify-content: space-between;
     }
 
     .music-items {

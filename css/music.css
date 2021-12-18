@@ -57,16 +57,26 @@
   content: url(../images/detecting.png);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 600px) {
   .music-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .music-items {
+    max-width: calc( 100% / 2 - 16px);
+  }
+}
+
+@media (min-width: 800px) {
+  .music-list {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   .music-items {
     max-width: calc( 100% / 3 - 8px);
