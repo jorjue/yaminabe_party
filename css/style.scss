@@ -383,16 +383,12 @@ img {
     }
 
     .main-column {
-        max-width: 55vw;
+        max-width: 60vw;
     }
 
     .pickup-section {
         width: 100%;
         margin: 0 auto;
-    }
-
-    .top-slider {
-        width: 40%;
     }
 
     .sisters-list {
@@ -482,14 +478,10 @@ img {
 // slick 
 
 .slider {
-    width: 100%;
-    max-width: 1064px;
-    max-height: 50vh;
-    margin: 16px auto;
-}
-
-.slider-item {
-    margin: 0 12px;
+    width: calc( 100% - 16px);
+    height: auto;
+    max-width: 2000px;
+    max-height: 80vh;
 }
 
 .slick-dotted.slick-slider {

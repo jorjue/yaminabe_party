@@ -32,6 +32,10 @@ $twitter: #1da1f2;
     margin-bottom: 3rem;
 }
 
+.sns-links {
+    margin-bottom: 16px;
+}
+
 .sns-link-area {
     border: 2px solid #909090;
     border-radius: 20px;
@@ -89,13 +93,11 @@ $twitter: #1da1f2;
     margin: 0 auto;
     display: block;
     position: relative;
-    left: 10px;
 
     &#twitcasting {
         border-radius: 20px;
         width: 120px;
-        top: 10px;
-        margin-bottom: 46px;
+        top: 22px;
     }
 }
 
@@ -103,18 +105,43 @@ $twitter: #1da1f2;
     position: absolute;
     left: 50%;
     bottom: 50%;
-    transform: translate( -40%, 75%);
+    transform: translate( -50%, 75%);
     font-weight: 600;
     color: white;
     user-select: none;
 
     &#twicas {
-        bottom: 88%;
+        bottom: 80%;
         font-size: 1.2rem;
     }
 }
 
+.sns-link-list {
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        position: absolute;
+        bottom: -32px;
+        left: 46%;
+        transform: rotate(45deg);
+        border-bottom: 2px solid #909090;
+        border-right: 2px solid #909090;
+    }
+}
+
+#tuicas {
+    margin-bottom: 72px;
+}
+
 @media (min-width: 600px) {
+
+    .sns-links {
+        margin-bottom: 16px;
+    }
 
     .sns-link-items {
         max-width: calc( 100% / 4 - 16px);
@@ -122,6 +149,13 @@ $twitter: #1da1f2;
 
     .sns-link-img {
         width: 150px;
+    }
+
+    .sns-link-list {
+
+        &::after {
+            left: 48%;
+        }
     }
 }
 
@@ -132,19 +166,9 @@ $twitter: #1da1f2;
     }
 
     .sns-link-list {
-        position: relative;
 
         &::after {
-            content: "";
-            width: 30px;
-            height: 30px;
-            background-color: white;
-            position: absolute;
             bottom: -17px;
-            left: 50%;
-            transform: rotate(45deg);
-            border-bottom: 2px solid #909090;
-            border-right: 2px solid #909090;
         }
     }
 
