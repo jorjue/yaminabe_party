@@ -313,9 +313,9 @@ img {
     }
 }
 
-// ブレークポイント: 1200px;
+// ブレークポイント: 1000px;
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
 
     .pc-view-flex {
         display: flex;
@@ -478,10 +478,11 @@ img {
 // slick 
 
 .slider {
-    width: calc( 100% - 16px);
+    width: 100%;
     height: auto;
     max-width: 2000px;
     max-height: 80vh;
+    margin: 0 auto;
 }
 
 .slick-dotted.slick-slider {
@@ -489,9 +490,32 @@ img {
 }
 
 .slider img {
-    height: 50vh;
+    height: 40vh;
     width: 100%;
+    padding: 0 12px;
     object-fit: cover;
+}
+
+@media (min-width: 600px) {
+
+    .slider {
+        width: 70%;
+    }
+
+    .slider img {
+        height: 65vh;
+    }
+}
+
+@media (min-width: 100px) {
+
+    .slider {
+        width: 55%;
+    }
+    
+    .slider img {
+        height: 60vh;
+    }
 }
 
 /*slick setting*/
