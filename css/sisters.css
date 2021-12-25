@@ -275,6 +275,30 @@
   display: none;
 }
 
+.sidebar-visual {
+  width: 25vw;
+  height: 100%;
+  opacity: .2;
+  background-size: cover;
+  background-position: center;
+}
+
+.sidebar-visual#hari {
+  background-image: url(../images/AdobeStock_780934-min.jpeg);
+}
+
+.sidebar-visual#suzu {
+  background-image: url(../images/AdobeStock_135113559-min.jpeg);
+}
+
+.sidebar-visual#meru {
+  background-image: url(../images/AdobeStock_222049450-min.jpeg);
+}
+
+.sidebar-visual#sui {
+  background-image: url(../images/AdobeStock_50547557-min.jpeg);
+}
+
 @media (min-width: 600px) {
   .sisters-title {
     font-size: 2.8rem;
